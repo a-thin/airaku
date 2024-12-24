@@ -1,0 +1,179 @@
+.pop {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    widows: 90%;
+    max-width: 1120px;
+    /*background-color:green ;*/
+    margin: 0 auto;
+    position: relative;
+}
+
+/* 横並びのCSS */
+.flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/*ヘッター*/
+header {
+    padding: 27px 0;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.header_menu li {
+    margin-left: 40px;
+}
+
+.header_menu li a {
+    transition: .3s;
+}
+
+.header_menu li a:hover {
+    color: #dc143c;
+    transition: .3s;
+}
+
+/*メイン*/
+#hero {
+    background-image: url(../images/1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 540px;
+    /* 画像に丸みをつける */
+    border-radius: 30px;
+    /* 文字を中央に寄せる */
+    display: flex;
+    align-items: center;
+    /* 画像下のスペース */
+    margin-bottom: 90px;
+    /* はみ出たところをカット */
+    overflow: hidden;
+}
+
+/* 画像に透かしを入れる */
+#hero::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    /* 半透明にする */
+    opacity: 0.2;
+    /* 黒い透かしより文字を上にする */
+    z-index: 1;
+}
+
+.hero_inner {
+    z-index: 2;
+    color: #ffffff;
+    width: 100%;
+    text-align: center;
+}
+
+.hero_inner p {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+
+.hero_inner h1 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+
+/* コンセプト */
+#concept {
+    margin-bottom: 120px;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: 500;
+    color: #dc143c;
+    margin-bottom: 40px;
+}
+
+#concept h3 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 60px;
+}
+
+.column-2 {
+    width: 48%;
+}
+
+.text {
+    line-height: 2;
+}
+
+.concept-img {
+    background-image: url(../images/1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 340px;
+    /* 画像に丸みをつける */
+    border-radius: 20px;
+}
+
+
+/* 作品集 */
+/* #artwork {
+    margin-bottom: 120px;
+}
+.artwork_inner {
+margin-bottom: 40px;
+}
+.artwork_inner{
+    margin-bottom: 40px;
+}
+.column-40{
+    width: 40%;
+}
+.column-55{
+    width: 55%;
+}
+#artwork img */
+
+h4 {
+    text-align: center;
+  }
+  
+  #gallery {
+    display: grid;
+    max-width: 1000px;
+    margin: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
+  
+  .img-item {
+    opacity: 0;
+    filter: blur(10px);
+    width: 100%;
+  }
+  
+  .img-item img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .img-item p {
+    text-align: center;
+  }
+  
+  footer {
+    text-align: center;
+    color: #EEE;
+  }
